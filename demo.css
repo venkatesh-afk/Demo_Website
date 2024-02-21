@@ -277,7 +277,7 @@ nav .fa-solid{
 }
 .calla{
     display: flex;
-    background-image: url("images/handshake.png");
+    background-image: url("handshake.png");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
