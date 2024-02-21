@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #f9f9f9;
+    overflow-x: hidden;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden; 
+}
+
+.logo{
+    font-size: 2em;
+    color: #356793;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #356793;
+    padding: 6px 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+nav a:hover{
+    color: white;
+    background: #356793;
+}
+nav a:hover, 
+nav a.active{
+    color: rgb(255, 255, 255);
+    background: #356793;
+}
+nav .fa-solid{
+    display: none;
+    color: white;
+}
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #333;
+    z-index: -100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+}
+
+/* About Us*/
+#title{
+    font-size: 3em;
+}
+.about{
+    height: 90vh;
+    background: rgb(3, 182, 217);
+    padding: 50px;
+}
+.about h2{
+    margin-bottom: 40px;
+    color: white;
+}
+.ab{
+    display: flex;
+}
+.leftab{
+    color: white;
+    flex-basis: 55%;
+    height: 400px;
+    margin-right: 50px;
+    border-right: #333 2px solid;
+    padding-right: 40px;
+}
+.leftab h2{
+    color: black;
+    font-size: 1.5em;
+}
+.rightab{
+    flex-basis: 45%;
+}
+.rightab p{
+    color: white;
+    margin-bottom: 40px;
+}
+.rightab a{
+    display: inline;
+    border: 1px black solid;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.rightab a:hover{
+    background-color: #333;
+}
+
+/*Services*/
+.services{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+.services h2{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+.servicesa{
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+.servicesa img{
+    width: 250px;
+    margin-bottom: 10px;
+}
+.servicesa h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.one, .two, .three{
+    background-color: #c7f7fa;
+    border-radius: 20px;
+    height: 460px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 24px 28px rgba(0, 0, 0, 0.50),10px 10px 10px rgba(0, 0, 0, 0.22);
+    transition: background 0.5s,transform 0.5s;
+}
+.one:hover, .two:hover, .three:hover{
+    transform: translateY(-15px);
+}
+
+/*Faq*/
+.faq{
+    width: 100%;
+    height: 90vh;
+    padding: 25px 70px;
+}
+.faqa{
+    display: flex;
+}
+.faql{
+    flex-basis: 50%;
+}
+.faql h2{
+    margin-bottom: 40px;
+}
+.faql details{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 28px rgba(0, 0, 0, 0.1),10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+.faql summary{
+    font-size: 1.25em;
+}
+.done summary::marker{
+    content: '01 ';
+    color: #356793;
+}
+.dtwo summary::marker{
+    content: '02 ';
+    color: #356793;
+}
+.dthree summary::marker{
+    content: '03 ';
+    color: #356793;
+}
+.dfour summary::marker{
+    content: '04 ';
+    color: #356793;
+}
+.faql summary:hover{
+    color: #356793;
+}
+.done span{
+    margin-left: 300px;
+}
+.dtwo span{
+    margin-left: 332px;
+}
+.dthree span{
+    margin-left: 296px;
+}
+.dfour span{
+    margin-left: 296px;
+}
+.faqr{
+    flex-basis: 40%;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+.faqr img{
+    width: 600px;
+}
+
+/*Acheivement*/
+.achv{
+    background-color: white;
+    height: 90vh;
+}
+.achva{
+    display: flex;
+}
+.achvl{
+    flex-basis: 50%;
+}
+.achvl img{
+    width: 700px;
+    margin-top: 70px;
+}
+.achvr{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.achvr h2{
+   color: #356793;
+   font-size: 1.7em;
+   margin-bottom: 50px;
+}
+.achvr span{
+    color: #356793;
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-right: 40px;
+}
+.achvr span{
+    position: relative;
+    top: 16px;
+}
+.achvr p{
+    font-size: 1.2em;
+    border-bottom: 1px solid #356793;
+    padding-bottom: 5px;
+}
+
+/*Call*/
+.call{
+    height: 50vh;
+    background-color: #3567937f;
+    color: white;
+}
+.calla{
+    display: flex;
+    background-image: url("images/handshake.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.calll{
+    padding-top: 130px;
+    margin-left: 100px;
+    flex-basis: 60%;
+}
+.calll h2{
+    font-size: 2.5em;
+}
+.calll p{
+    font-size: 1.2em;
+}
+.callr{
+    padding-top: 160px;
+    margin-left: 210px;
+}
+.callr a{
+    color: #000000;
+    font-size: 1.3em;
+    width: 300px;
+    height: 100px;
+    text-decoration: none;
+    border: black 2px solid;
+    padding: 20px;
+    border-radius: 50px;
+    transition: ease-out 0.3s;
+}
+.callr a:hover{
+     color: rgb(255, 255, 255);
+     background-color: #356793;
+     border: #356793 1px solid;
+
+}
+
+/*Contact*/
+.contact{
+    height: 100%;
+    background-color: #f6f6f6;
+    padding-bottom: 60px;
+}
+.contact h2{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+.contacta{
+    display: flex;
+    margin: 0 70px;
+    box-shadow: 0 2px 28px 10px rgba(0, 0, 0, 0.1),10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.contactl{
+    background-color: #006483;
+    width: 500px;
+    border-radius: 10px 0 0 10px;
+}
+.phone{
+    display: flex;
+    color: white;
+    background-color: #008192;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-bottom: 23px;
+}
+.phone i{
+    color: black;
+    font-size: 25px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.phone:hover i{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.phone:hover #heading{
+    color: black;
+}
+#heading{
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.contactr{
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    padding-right: 34px;
+}
+.contactr input{
+    width: 400px;
+    padding: 15px;
+    margin-left: 20px;
+    border: rgb(186, 186, 186)px;
+}
+#mail{
+    width: 97.6%;
+    margin-top: 20px;
+}
+.contactr textarea{
+    width: 97.6%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: rgb(186, 186, 186) px ;
+    padding: 15px;
+}
+#submit{
+    padding: 10px;
+    width: 97.6%;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    background-color: #356793;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+#submit:hover{
+    background-color: #008192;
+}
+
+/*Footer*/
+footer{
+    background-color: #356793;
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding: 50px 70px;
+}
+.footer{
+    display: flex;
+}
+.footera{
+    width: 500px;
+}
+.social{
+    margin: 10px 0px;
+}
+.social a{
+    color: rgba(255, 255, 255, 0.633);
+    margin-right: 30px;
+    font-size: 30px;
+}
+.social a:hover{
+    color: white;
+}
+.links{
+    display: flex;
+}
+.ulinks , .userve, .fcontact{
+    margin-left: 150px;
+}
+.ulinks ul, .userve ul, .fcontact ul{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.ulinks li, .userve li, .fcontact li{
+    list-style: none;
+    margin-bottom: 7px;
+}
+.ulinks a, .userve a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.633);
+}
+.ulinks a:hover, .userve a:hover{
+    color: white;
+}
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+.copyright i{
+    margin-right: 7px;
+}
+#des{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/*Responsive Website*/
+@media screen and (max-width:900px){
+    body{
+        width: 100%;
+        /* overflow-x: hidden;
+        overflow-y: hidden; */
+    }
+    header{
+        padding: 10px;
+    }
+    nav a{
+        color: #f9f9f9;
+    }
+   
+    nav .fa-xmark{
+        color: rgb(255, 255, 255);
+        display: block;
+    }
+    nav .fa-bars{
+        color: #356793;
+        font-size: 30px;
+        cursor:pointer;
+        display: block;
+    }
+    nav ul{
+        display: block;
+        background: #356793;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 10;
+    }
+    nav ul li{
+        margin-top: 30px;
+    }
+
+    nav ul i{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    nav .fa-solid{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .main{
+        height: 90vh;
+        /* display: block; */
+    }
+    #text{
+        text-align: center;
+    }    
+    .main img{
+        bottom: 0;
+    }
+
+    /*About Us*/
+    .about{
+        height: 100%;
+        padding: 0;
+        padding: 10px;
+        padding-bottom: 10%;
+        /* overflow-y: hidden; */
+    }
+    .about h2{
+        margin-bottom: 10px;
+    }
+    .ab{
+        display: block;
+    }
+    .leftab{
+        padding-right: 0;
+        margin-right: 0;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 1%;
+        border-right: 0;
+        border-bottom: #000000 1px solid;
+
+    }
+    .leftab p{
+        padding: 10px;
+    }
+    .rightab{
+        /* border-top: 1px solid black; */
+        padding-top: 10px;
+    }
+    
+    /*Services*/
+    .services{
+        height: 100%;
+        padding-bottom: 10%;
+    }
+    #title{
+        font-size: 2em;
+    }
+    .servicesa{
+        display: block;
+        padding: 0%;
+    }
+    .one, .two, .three{
+        margin: auto;
+        margin-bottom: 50px;
+        width: 90%;
+        padding: 10px;
+    }
+    /*Faq*/
+    .faq{
+        padding: 20px;
+        height: 100%;
+    }
+    .faqa{
+        display: block;
+    }
+    .faq h2{
+        text-align: center;
+    }
+    .done span,.dtwo span, .dthree span, .dfour span{
+        position: absolute;
+        right: 40px;
+    }
+    .faqr{
+        margin-left: 0;
+    }
+    .faqr img{
+        width: 100%;
+    }
+
+    /*Acheivement*/
+    .achv{
+        height: 100%;
+        padding-bottom: 10%;
+    }
+    .achva{
+        display: block;
+    }
+    .achvl img{
+        width: 100%;
+        margin: auto;
+    }
+    .achvr{
+        margin-right: 0;
+        margin-bottom: 50px;
+        padding: 3%;
+    }
+    .achvr h2{
+        text-align: center;
+    }
+    .achvr span{
+        font-size: 3em;
+    }
+    
+    /*Call*/
+    .call{
+        height: 60vh;
+    }
+    .calla{
+        display: block;
+    }
+    .calll{
+        margin-left: 0;
+        text-align: center;
+        color: #000000;
+    }
+    .callr{
+        padding-top: 70px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /*Contact*/
+    .contacta{
+        display: block;
+        margin: 0;
+        height: 100%;
+        box-shadow: none;
+    }
+    .contactl{
+        width: 100%;
+        margin: auto;
+        border-radius: 0px;
+        padding-bottom: 10px;
+    }
+    .contactr{
+        padding-right: 0;
+        text-align: center;
+    }
+    .contactr input{
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    #mail{
+        width: 90%;
+        margin-top: 1px;
+    }
+    .contactr textarea{
+        width: 90%;
+        margin: auto;
+    }
+    #submit{
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    /*Footer*/
+    footer{
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .footer{
+        display: block;
+    }
+    .footera{
+        padding: 30px;
+        width: 98%;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .ulinks{
+        margin-left: 0;
+    }
+    .fcontact{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .copyright{
+        width: 98%;
+    }
+}   

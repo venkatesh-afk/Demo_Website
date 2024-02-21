@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Demo Website</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav>
+        <ul id="sidemenu">   
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+           <li><a href="#services">Service</a></li>
+           <li><a href="#faq">Faq</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+    </header>
+
+    <section class="main">
+        <h2 id="text">Demo Website</h2>
+        <img src="images/left-Background.png" alt="" id="left">
+        <img src="images/right-Background.png" alt="" id="right">
+    </section>
+
+    <!-- About Us -->
+
+    <section class="about" id="about">
+        <h2 id="title"> About Us</h2>
+        <div class="ab">
+            <div class="leftab" data-aos="fade-right"   data-aos-duration="1000">
+                <h2>Demo Website</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis illum commodi animi, ipsam tempora hic pariatur quaerat quod quibusdam odit odio? Accusantium sapiente ab aperiam iste consequatur nam repellat minima expedita, sunt veritatis vitae modi aspernatur recusandae. Eos omnis aut nihil consectetur optio doloribus praesentium sit perspiciatis culpa maiores cum est reiciendis delectus quod ducimus magni quibusdam accusamus, odit hic sapiente aliquam veritatis, dolor beatae velit. Perferendis quos cum libero numquam id nemo, nobis reprehenderit atque ratione quia nostrum iusto repudiandae consequuntur magnam, reiciendis blanditiis, velit perspiciatis sit ducimus iure! Fuga, qui quisquam. Fuga dolor voluptas veniam recusandae fugiat?</p>
+            </div>
+            <div class="rightab" data-aos="fade-left" data-aos-duration="1000">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum modi illo reprehenderit eaque placeat soluta libero doloremque fugit tempora saepe voluptatum consequatur error explicabo debitis ullam, quis hic deserunt ab asperiores officia inventore ipsum. Vero fugiat voluptate, eos consequuntur voluptatum, tempora excepturi iusto, ab eius fuga cupiditate quae. Deserunt, ipsa.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Services     -->
+<section class="services" id="services">
+    <h2 id="title">Our Services and Feature</h2>
+    <div class="servicesa">
+        <div class="one" data-aos="slide-right">
+            <img src="images/acheive.png" alt="">
+            <h3>First</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium officia cupiditate recusandae neque optio laudantium eos id. Molestias, tempore ab.</p>
+        </div>
+        <div class="two" data-aos="slide-up">
+            <img src="images/Analyze.png" alt="">
+            <h3>Second</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque nulla quasi voluptate vitae necessitatibus ut nostrum ea, iure ipsam.</p>
+        </div>
+        <div class="three" data-aos="slide-left">
+            <img src="images/Analyze.png" alt="">
+            <h3>Third</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium officia cupiditate recusandae neque optio laudantium eos id. Molestias, tempore ab.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Faq -->
+<section class="faq" id="faq">
+    <div class="faqa">
+    <div class="faql">
+    <h2 id="title">Most Asked Question</h2>
+    <details class="done" data-aos="fade-down">
+        <summary>Lorem ipsum dolor sit? <span><i class="fa-solid fa-angle-down"></i></span></summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque voluptatibus eius et officiis ut.</p>
+    </details>
+    <br>
+    <details class="dtwo" data-aos="fade-down" data-aos-delay="200">
+        <summary>Lorem ipsum dolor?<span><i class="fa-solid fa-angle-down"></i></span></summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, nam.</p>
+    </details>
+    <br>
+    <details class="dthree" data-aos="fade-down"  data-aos-delay="300">
+        <summary>Lorem ipsum amet sit? <span><i class="fa-solid fa-angle-down"></i></span></summary>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat fugit harum.</p>
+    </details>
+    <br>
+    <details class="dfour" data-aos="fade-down"  data-aos-delay="300">
+        <summary>Lorem ipsum amet sit? <span><i class="fa-solid fa-angle-down"></i></span></summary>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat fugit harum.</p>
+    </details>
+</div>
+    <div class="faqr" data-aos="zoom-in">
+        <img src="images/Faq.png" alt="">
+
+</div>
+</div>
+</section>
+
+<!-- acheivement -->
+<section class="achv">
+    <div class="achva">
+        <div class="achvl" data-aos="fade-right" data-aos-duration="1000">
+            <img src="images/Acheivement.jpg" alt="">
+        </div>
+        <div class="achvr">
+            <h2 data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            <p data-aos="fade"><span>350+</span>  Happy Customers</p>
+            <br>
+            <p data-aos="fade-down"><span>500+</span>Live Projects</p>
+            <br>
+            <p data-aos="fade-down"><span>200+</span> Lorem Ipsum</p>
+        </div>
+    </div>
+</section>
+
+<!-- Call -->
+<section class="call">
+    <div class="calla">
+        <div class="calll">
+            <h2>Call To Action</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquid laudantium necessitatibus eveniet error ipsa?</p>
+        </div>
+        <div class="callr">
+            <a id="cah" href="#">Call to Action</a>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h2 id="title">Contact Us</h2>
+    <div class="contacta">
+      <div class="contactl" data-aos="slide-right" data-aos-duration="1000">
+        <br>
+        <div class="phone">
+            <p><i class="fa-solid fa-phone"></i></p>
+            <div>
+            <p id="heading">Call</p>
+            <p id="no">0123456789</p>
+            </div>
+        </div>
+        <div class="phone">
+            <p><i class="fa-solid fa-envelope"></i></p>
+            <div>
+            <p id="heading">Mail</p>
+            <p id="no">loremipsum@gmail.com</p>
+            </div>
+        </div>
+        <div class="phone">
+            <p><i class="fa-solid fa-location-dot"></i></p>
+            <div>
+            <p id="heading">Location</p>
+            <p id="no">123, Gn Street, New York, NY 123</p>
+            </div>
+        </div>
+        <div class="phone">
+            <p><i class="fa-solid fa-clock"></i></p>
+            <div>
+            <p id="heading">Open Hours</p>
+            <p id="no">Mon - Sat : 11.00am - 6.00pm</p>
+            </div>
+        </div>
+      </div>
+      <div class="contactr" data-aos="slide-left" data-aos-duration="1000">
+        <form action="">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="number" name="" id="" placeholder="Enter Your Phone Number">
+            <br>
+            <input type="email" name="" id="mail" placeholder="Enter Your Email">
+            <textarea name="" id="message" cols="50" rows="10" placeholder="Enter Your Message"></textarea>
+            <button type="button" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer">
+    <div class="footera">
+    <h2>Demo Website</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum beatae architecto voluptate odio quae sit!</p>
+    <div class="social">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+    </div>
+</div>
+<div class="links">
+<div class="ulinks">
+    <ul>Useful Links</ul>
+    <li><a href="">> Home</a></li>
+    <li><a href="">> About</a></li>
+    <li><a href="">> Services</a></li>
+    <li><a href="">> Faq</a></li>
+    <li><a href="">> Contact</a></li>
+</div>
+
+<div class="userve">
+    <ul>Our Services</ul>
+    <li><a href="">> Lorem</a></li>
+    <li><a href="">> Ipsum</a></li>
+    <li><a href="">> Aket</a></li>
+</div>
+</div>
+
+<div class="fcontact">
+    <ul>Contact Us</ul>
+    <li>123, Gn Street, <br> New York, NY 123</li>
+    <br>
+    <li>Phone: 0123456789</li>
+    <li>Email: loremipsum@gmail.com</li>
+</div>
+</div>
+<div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i>Copyright Demo Website. All Rights Reserved</p>
+    <p id="des">Designed By Savaujak</p>
+</div>
+
+
+</footer>
+</body>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>
+</html>
